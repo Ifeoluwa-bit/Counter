@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{  font-family:  'Roboto', sans-serif;
+    text-transform: capitalize;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    border: none; outline: none;
+}
+
+body{
+    background: #13162b;
+    height: 100vh;
+    place-items: center;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttons{
+    display: flex;
+    position: relative;
+    top: -18%;
+}
+
+.buttons .btn1 i{
+    position: absolute;
+    left: 12%;
+    bottom: 54%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buttons .btn2 i{
+    position: absolute;
+    left: 46%;
+    bottom: 52%;
+    color: #0087ff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buttons .btn3 i{
+    position: absolute;
+    left: 78%;
+    bottom: 50%;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.buttons .btn1, .buttons .btn2, .buttons .btn3{
+    width: 8rem;
+}
+
+#increment, #decrement{
+    background-color: #0087ff;
+    border: .1rem solid #0087ff;
+}
+    
+
+#reset{
+    background: transparent;
+    color: #0087ff;
+    border: .1rem solid #0087ff;
+    padding: 2rem;
+}
+
+
+button{
+    border-radius: .2rem;
+    padding: 2rem 1rem;
+    color: #fff  ;
+    position: relative;
+    cursor: pointer;
+    font-size: 1.2rem;
+    height: 3.5rem;
+    margin-top: .5rem;
+    
+}
+
+
+#counter{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background: #191c37;
+    color: #fff;
+    padding: 6rem 2.4rem;
+    width: 80vmin;
+    text-align: center;
+    position: relative;
+    border-radius: .5rem;
+    font-family: "Roboto Mono", monospace ;
+    box-shadow: 0 25px 40px rgba(0,0,0, .2);
+}
+
+#counter:after{
+    content: "";
+    position: absolute;
+    width: 85%;
+    left: 7.5%;
+    background: #0097ff;
+    height: 120%;
+    bottom: -10%;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+/*media queries*/
+
+@media(max-width: 991px){
+    .buttons{
+        top: -7.5rem;
+        left: -0.25rem;   
+    }
+
+}
+
+@media(max-width: 768px){
+    .buttons{
+        top: -7.5rem;
+        left: -0.25rem;   
+    }
+
+}
+@media(max-width: 576px){
+    #counter{
+        font-size: 2rem;
+        padding: 3rem 2.4rem;
+        width: 50vmin;
+        position: relative;
+        height: 70vh;
+    }
+    
+    #counter:after{
+        width: 65%;
+        left: 17%;
+    }
+    
+    main{
+        overflow-y: hidden;
+        padding-top: 16rem;
+    }
+    
+    .buttons{
+        display: inline-block;
+        top: -22rem;
+        left: -2.2rem;   
+    }
+
+    .buttons .btn1 i{
+        font-size: 1rem;
+
+    }
+    
+    .buttons .btn2 i{
+        font-size: 1rem;
+    }
+    
+    .buttons .btn3 i{
+        font-size: 1.2rem;
+    }
+    
+    .buttons .btn1, .buttons .btn2, .buttons .btn3{
+        width: 3rem;
+        height:6rem;
+    }
+
+    button{
+        height: 2.5rem;
+    }
+
+    .buttons .btn1 i{
+        position: absolute;
+        left: 12%;
+        bottom: 54%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .buttons .btn2 i{
+        position: absolute;
+        left: 46%;
+        bottom: 52%;
+        color: #0087ff;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .buttons .btn3 i{
+        position: absolute;
+        left: 78%;
+        bottom: 50%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    .buttons .btn1 i{
+        left: 95%;
+        bottom: 88%;
+    }
+
+    .buttons .btn2 i{
+        left: 95%;
+        bottom: 54%;
+    }
+
+    .buttons .btn3 i{
+        position: absolute;
+        left: 95%;
+        bottom: 20%;
+        color: #fff;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 380px){
+    #counter{
+        font-size: 1.5rem;
+        height: 65vh;
+        padding: 3rem 7.4rem;
+    }
+    button{
+        height: 0rem;
+    }
+
+    .buttons .btn1, .buttons .btn2, .buttons .btn3{
+        width: 3rem;
+        height:6rem;
+    }
+}
+
